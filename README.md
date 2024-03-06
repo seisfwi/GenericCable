@@ -1,5 +1,5 @@
-# GenericCable
- Generic cable class for Distributed Acoustic Sensing (DAS) data      modeling (forward) and inversion (adjoint).
+# GenericCable (in prep for IMAGE-2024)
+Generic cable class for Distributed Acoustic Sensing (DAS) data modeling (forward) and inversion (adjoint).
 
 More examples are coming soon ...
 

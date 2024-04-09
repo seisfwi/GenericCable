@@ -53,8 +53,7 @@ __pycache__/
 # ignore figures
 *.png
 *.pdf
-!docs/logo1.png
-!docs/logo2.png
+!docs/demo.png
 
 # ignore zip files
 *.zip

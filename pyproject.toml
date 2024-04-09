@@ -1,0 +1,62 @@
+[tool.poetry]
+name = "genericcable"
+version = "0.0.4"
+description = "Generic cable class for Distributed Acoustic Sensing (DAS) data modeling (forward) and inversion (adjoint)."
+authors = ["Haipeng Li <haipeng@sep.stanford.com>"]
+license = "MIT"
+readme = "README.md"
+include = ["genericcable/*.py", "pyproject.toml"]
+classifiers = [
+        "Development Status :: 2 - Pre-Alpha",
+        "Environment :: Console",
+        "Intended Audience :: Science/Research",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Topic :: Scientific/Engineering",
+        "Topic :: Scientific/Engineering :: Physics",
+    ]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+numpy = "^1.26.4"
+matplotlib = "^3.8.3"
+scipy = "^1.12.0"
+pyproj = "^3.6.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.1"
+pytest-cov = "^4.1.0"
+black = "^23.7.0"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+nbstripout = "^0.6.1"
+pre-commit = "^3.3.3"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^4.5.0"
+pydata-sphinx-theme = "^0.8.1"
+sphinx-autoapi = "^1.8.4"
+jupyter-sphinx = "^0.3.2"
+sphinx-copybutton = "^0.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '.*\.py$'
+
+[tool.isort]
+profile = "black"

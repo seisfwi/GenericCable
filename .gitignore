@@ -1,0 +1,78 @@
+# macOS.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VisualStudioCode.gitignore
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# ignore jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# ignore pytest cache
+.pytest_cache/
+
+# Compiled source
+*.o
+*.so
+
+# Ignore Python bytecode files
+**/__pycache__/
+__pycache__/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Local History for Visual Studio Code
+.history/
+
+# ignore segy, bin, and dat files if any
+*.segy
+*.sgy
+*.bin
+*.dat
+*.txt
+*.npy
+*.npz
+*.csv
+*.mat
+*.h5
+*.hdf5
+*.json
+*.pickle
+*.pkl
+*.log
+
+# ignore figures
+*.png
+*.pdf
+!docs/logo1.png
+!docs/logo2.png
+
+# ignore zip files
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+
+# ignore the folder tests/data/test*
+tests/data/test*
+data/BPSalt
+data/Foothills
+data/Overthrust
+data/Marmousi1
+data/Marmousi2
+data/Overthrust
+data/Valhall
+
+
+# Don't ignore the following files
+!seisfwi/model/eostable.npy

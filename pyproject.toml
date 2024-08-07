@@ -2,7 +2,7 @@
 name = "genericcable"
 version = "0.0.4"
 description = "Generic cable class for Distributed Acoustic Sensing (DAS) data modeling (forward) and inversion (adjoint)."
-authors = ["Haipeng Li <haipeng@sep.stanford.com>"]
+authors = ["Haipeng Li <haipeng@sep.stanford.edu>"]
 license = "MIT"
 readme = "README.md"
 include = ["genericcable/*.py", "pyproject.toml"]
